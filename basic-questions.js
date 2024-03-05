@@ -13,7 +13,7 @@ function  checkPrime(num) {
 checkPrime(5);
 
 //Maximum Number in array:
-// let count = prompt("Enter the count");
+let count = prompt("Enter the count");
 let n = parseInt(count);
 function maxElement(n)
 {
@@ -93,17 +93,17 @@ function isPrime(num)
 
 // Find largest element in nested arrays:
 
-function findLargest(num)
-{
-    const array = [34,67,48,23,45];
+// function findLargest(num)
+// {
+//     const array = [34,67,48,23,45];
     
-}
+// }
 
 //Function to capitlize 1st letter  of each word and convert all letters to uppercase
 
-function TitleCase(str)
-{
-  //  const  str = "It's a beautiful day";
-  return str.replace(str.charAt(0).toUpperCase());
-}
-TitleCase(str);
+// function TitleCase(str)
+// {
+//   //  const  str = "It's a beautiful day";
+//   return str.replace(str.charAt(0).toUpperCase());
+// }
+// TitleCase(str);
