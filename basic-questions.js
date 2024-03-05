@@ -2,26 +2,26 @@
 
 
 // //Code to chech weather given number  is prime or not:
-// function  checkPrime(num) {
-//     if(num>1 && num%2!==0){
-//         console.log(num + "is a Prime Number");
-//     }
-//         else{
-//             console.log(num+ "is not a prime number");
-//         }
-// }
-// checkPrime(5);
+function  checkPrime(num) {
+    if(num>1 && num%2!==0){
+        console.log(num + "is a Prime Number");
+    }
+        else{
+            console.log(num+ "is not a prime number");
+        }
+}
+checkPrime(5);
 
 //Maximum Number in array:
 // let count = prompt("Enter the count");
-// let n = parseInt(count);
-// function maxElement(n)
-// {
-//    const nums = [34,26,37,48]; 
-//     nums.sort();
-//     return nums[n-1];
-// }
-// console.log(maxElement());
+let n = parseInt(count);
+function maxElement(n)
+{
+   const nums = [34,26,37,48]; 
+    nums.sort();
+    return nums[n-1];
+}
+console.log(maxElement());
 
 
 //Check if the given string is plaindrome:
