@@ -262,4 +262,50 @@ console.log(currentdate.getMonth());
 
 
 
-//Enums
+//Enums demonstration
+const items = Object.freeze(
+  {
+    pen:1,
+    pencil:2,
+    whitener:3,
+    eraser:4
+  }
+)
+Object.keys(items).forEach((items)=>
+console.log("itesm are:",items)
+)
+
+let variable5 = new Object();
+
+variable5['key1'] = 'value1';
+variable5['key2'] = 'value2';
+variable5['key3'] = 'value3';
+
+for(let key in variable5){
+
+  if(variable5.hasOwnProperty(key)){
+    console.log('key is: '+key+', value is:' +variable5[key]);
+  }
+}
+ 
+let variable6 = new Map();
+
+variable6.set('key1','value1');
+variable6.set('key2','value2');
+variable6.set('key3','value3');
+
+console.log(variable6.get('key3'));
+
+variable6.set('key2','nee value')
+
+console.log(variable6.get('key2'));
+
+variable6.delete('key3');
+variable6.has('key3');
+variable6.has('key3');
+
+
+
+
+  
+
