@@ -303,6 +303,27 @@ console.log(variable6.get('key2'));
 variable6.delete('key3');
 variable6.has('key3');
 variable6.has('key3');
+// console.log(`My name is ${NAME}`);
+
+// let myname ='Rakshit';
+//Memory hoisting 
+console.log(myNameDisplay);
+
+// function myNameDisplay(){
+//   const myname = 'Rakshit';
+//   console.log(`My name is ${myname}.`);
+// }
+
+// console.log(typeof myNameDisplay);
+
+const myNameDisplay = function()
+{
+  const myname = 'Rakshit';
+  console.log(`My name is ${myname}.`);
+}
+console.log(myNameDisplay());
+// console.log(typeof myNameDisplay);
+
 
 
 
