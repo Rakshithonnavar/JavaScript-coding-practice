@@ -307,7 +307,7 @@ variable6.has('key3');
 
 // let myname ='Rakshit';
 //Memory hoisting 
-console.log(myNameDisplay);
+// console.log(myNameDisplay);
 
 // function myNameDisplay(){
 //   const myname = 'Rakshit';
@@ -316,13 +316,103 @@ console.log(myNameDisplay);
 
 // console.log(typeof myNameDisplay);
 
-const myNameDisplay = function()
-{
-  const myname = 'Rakshit';
-  console.log(`My name is ${myname}.`);
-}
-console.log(myNameDisplay());
+// const myNameDisplay = function()
+// {
+//   const myname = 'Rakshit';
+//   console.log(`My name is ${myname}.`);
+// }
+// console.log(myNameDisplay());
 // console.log(typeof myNameDisplay);
+
+//Iterators Demonstration
+
+console.log('Ba'+'100'+'Na');
+function createIteratorRange(min=0,max=Infinity,step=1)
+{
+  let nextnum =min;
+  let count =0;
+  
+  const rangeInterate = (next)=>
+  {
+     let result;
+     if(nextnum<max)
+     {
+      result = {value:nextnum,done:false};
+      nextnum+=step;
+      count++;
+      return result;
+     }
+     return {value:count,done:true};
+  }
+  return rangeInterate;
+}
+console.log(createIteratorRange);
+
+//Memoization Demonstration.
+memo = [];
+function checkarray(num)
+{
+  const memodemo = [45,67,89,34,56];
+   if(memodemo[num])
+    return memodemo[num];
+  else{
+     memodemo.push(num);
+     memodemo.sort();
+    //  memodemo.pop();
+  }
+  return memodemo;
+}
+console.log(checkarray(78));
+
+//Method Demonstration:
+const Bio = {
+  Name: "RAKSHIT",
+  AGE: "22",
+  GENDER:'Male',
+person: function()
+{
+  console.log("The name is "+ this.Name); 
+   console.log("My age is " +this.AGE);
+   console.log("My gender is " +this.GENDER);
+}
+}
+
+let random = Bio.person();
+Bio.AGE=23;
+random = Bio.person.bind(Bio);
+random();
+
+// let test6 = Bio.person;
+// console.log(test6);
+
+//Modules Demonstration:
+// export function displayName(name)
+// {
+//   return `Hello this is ${name} here!`; 
+// }
+
+//Mutator Method Implementation.
+
+class Human7
+{
+  #name;
+  set name(name)
+  {
+    this.#name = name;
+  }
+}
+
+const namestest = new Human7();
+namestest.name = 'Rakshit';
+
+console.log(namestest.name);
+
+
+
+
+
+
+
 
 
 
