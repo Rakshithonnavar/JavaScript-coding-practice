@@ -2,4 +2,4 @@
 
 
 This repository contains the JavaScript Interview Questions.
-Also the Random files created for practice purpose.
+Also few of the  Random files created for practice purpose.
