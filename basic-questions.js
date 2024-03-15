@@ -407,6 +407,46 @@ namestest.name = 'Rakshit';
 
 console.log(namestest.name);
 
+const n = 256.5;
+isFinite(n)
+console.log(isFinite(n));
+// return isNaN(n)? 1:0;
+console.log(isNaN(n));
+const n1 = n.toExponential();
+console.log(n1);
+const n2 = n.toString();
+console.log(n2);
+let n3 = n.toLocaleString();
+console.log(n3);
+console.log(typeof n2);
+console.log(typeof n3);
+
+// const person = new Person();
+
+const Engineer = {
+  Firstname: 'Rakshit',
+  LastName:'Honnavar',
+  Age : 22,
+  Gender: 'Male'
+}
+Engineer.Firstname;
+
+//Using Object Constructors
+class Person{
+  constructor(firstname,lastName)
+  {
+    this.firstname = firstname;
+    this.lastName=lastName;
+  }
+  greeting()
+  {
+     return `Hi my name is ${this.firstname}   ${this.lastName}`;  
+  }
+}
+const person = new Person('rakshit','honnavar');
+console.log(person.greeting());
+
+
 
 
 
