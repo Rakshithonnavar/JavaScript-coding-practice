@@ -446,15 +446,80 @@ class Person{
 const person = new Person('rakshit','honnavar');
 console.log(person.greeting());
 
+//Using Object Constructors.
+class HumI{
+  constructor(age,gender)
+  {
+    this.age=age;
+    this.gender=gender;
+  }
+   greeting()
+   {
+    return `Hi my AGE IS  ${this.age} ${this.gender}.`
+   }
+}
+const num = new HumI('22','Male');
+console.log(num.greeting());
+console.log(2+2);
+let sankye = 65<23;
+console.log(sankye);
+console.log(89=="89");
+const val = "true";
+const val1 = "false"
 
+let check = true || false;
+console.log(check);
 
+let i=true;
+let a=0;
+let b=0;
+let c=0;
+i==true? (a++,b++,c++):((a=0),(b=0),(c=0));
+console.log('a=',a,'b=',b,'c=',c);
+//Greatest of 3 numbers using ternary operator:
+let x=23;
+let y=45;
+let z=67;
+const answer = (x>y)&&(x>c)? x: ((y>z)? y : z );
+console.log("The Greatest Number is",answer);
+const answer1 = (x<y)&&(x<z)? x:( (y<x)? y : x ) ;
+console.log("The Smallest Number is",answer1);
 
+//Usage of Chaining 
+const promise = new Promise((resolve,reject)=>
+{
+   const term1 = 45;
+   const term2 = 45;
+   const val3 = term1+term2;
+   const answer2 = 91;
+   const check = val3===answer2;
 
-
-
-
-
-
+   if(check)
+   {
+    resolve('The promise was fullfilled!');
+   }
+   else{
+      reject(
+        {
+          errortype:'ArithmeticError',
+          message:"Expression was calculated correctly.",
+          orgexp:`${term1}+${term2}=== ${answer2}`,
+        }
+      );
+   }
+});
+promise.then((message)=>
+{
+  console.log(`success :${message}`);
+})
+.catch((err)=>{
+   console.log(`${err.errortype}: ${err.message} \nOriginal Expression: ${err.orgexp}`);
+}
+)
+.finally((message)=>{
+console.log('Operations finished');
+}
+);
 
 
 
