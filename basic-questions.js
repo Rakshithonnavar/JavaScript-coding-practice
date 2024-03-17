@@ -521,6 +521,75 @@ console.log('Operations finished');
 }
 );
 
+//Async and await demonstration:
+function demo1()
+{
+  return  new Promise((resolve)=>
+  {
+    resolve('Sucessfull promise');
+  });
+}
+
+function demo2()
+{
+  return new Promise((resolve)=>{
+    resolve('Second Sucessfull promise!');
+  });
+}
+
+async function someAsyncAwaitFunction()
+{
+  try{
+    const promise = await  demo1();
+    const promiseTWO = await demo2();
+    console.log(promise, promiseTWO);
+  }
+  catch(error)
+  {
+     console.log(`Error from async function: ${error}`);
+  }
+}
+
+someAsyncAwaitFunction();
+
+
+
+//Largest of 3 numbers:
+// let p=10;
+// let q=20;
+// let r=30;
+
+// const res=  (p>q && p>r) ?P:(q>r)?q:r;
+// console.log("The largest number is : "+res);
+class gaadi{
+  constructor(company,paisa,saal)
+  {
+    this.company=company;
+    this.paisa=paisa;
+    this.saal=saal;
+  }
+}
+const vahana = new gaadi("toyota","34lakh",'2019');
+const vxh =  `this car belongs to ${this.company} its price is ${this.paisa} and the lauching year is ${this.saal}`;
+console.log(vxh);
+
+//Regular Expressions
+// let regularexp = new RegExp('foo?','i');
+// let regularexp1 = new RegExp1('amg%%');
+console.log(regularexp);
+
+let strr = 'My name is Rakshit';
+
+// let reggexp = new exp('rakshit',"gi");
+console.log(strr.replace(reggexp,"Rakshit"));
+
+let strng = 'york is Worship';
+let reggexp =  new  RegExp ('\w', "w");
+console.log(strng.replace(reggexp,'y'));
+
+
+
+
 
 
   
