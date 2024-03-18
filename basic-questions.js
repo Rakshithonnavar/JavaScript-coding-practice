@@ -576,17 +576,53 @@ console.log(vxh);
 //Regular Expressions
 // let regularexp = new RegExp('foo?','i');
 // let regularexp1 = new RegExp1('amg%%');
-console.log(regularexp);
+// console.log(regularexp);
 
-let strr = 'My name is Rakshit';
+// let strr = 'My name is Rakshit';
 
 // let reggexp = new exp('rakshit',"gi");
-console.log(strr.replace(reggexp,"Rakshit"));
+// console.log(strr.replace(reggexp,"Rakshit"));
 
-let strng = 'york is Worship';
-let reggexp =  new  RegExp ('\w', "w");
-console.log(strng.replace(reggexp,'y'));
+// let strng = 'york is Worship';
+// let reggexp =  new  RegExp ('\w', "w");
+// console.log(strng.replace(reggexp,'y'));
 
+
+function demo3()
+{
+  return new Promise((resolve)=>{
+    console.log("third test");
+  })
+}
+function demo4()
+{
+  return new Promise((reject)=>{
+    console.log("Fourth test");
+  })
+} 
+
+async function awaitdemofunction()
+{
+  try{
+  const d1 = await  demo3();
+  const d2 = await demo2();
+  console.log(d1,d2);
+  }
+  catch(error)
+  {
+    console.log(`the  error is ${error}`);
+  }
+}
+
+console.log(awaitdemofunction());
+
+//HTML Request and response method:
+
+let create = new XMLHttpRequest();
+
+create.open(method,URL,[async,user,password]);
+
+create.send([body]);
 
 
 
