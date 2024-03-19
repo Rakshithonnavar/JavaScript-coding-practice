@@ -618,11 +618,61 @@ console.log(awaitdemofunction());
 
 //HTML Request and response method:
 
-let create = new XMLHttpRequest();
+// let create = new XMLHttpRequest();
 
-create.open(method,URL,[async,user,password]);
+// create.open(method,URL,[async,user,password]);
 
-create.send([body]);
+// create.send([body]);
+
+// create.onload = function()
+// {
+//   alert(`Progress: ${create.status} ${create.response}`);
+// };
+
+// create.onerror = function()
+// {
+//   alert(`Network error occured`);
+// };
+
+// create.onprogress = function(event)
+// {
+//   alert(`Received ${event.loaded} of ${event.total}`);
+// };
+
+// create.timeout = 10000;
+
+
+function functionName(...digit)
+{
+   let rem
+   let sum=0;
+        
+      for(const randomm of digit)
+      {
+      rem%=10;
+      sum+=sum+rem;
+      digit/=10;
+    }
+    return sum;
+}
+let numss = [457,678];
+// let randomm = functionName(...digit);
+console.log(functionName(...numss));
+
+// function sumVals(...vals)
+// {
+//   let total=0;
+//   for(let val of vals)
+//   {
+//     total+=val;
+//   }
+//   return total;
+// }
+
+// let nums = [2,4,6,8,10];
+// console.log(sumVals(...nums));
+
+
 
 
 
