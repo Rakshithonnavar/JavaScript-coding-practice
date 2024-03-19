@@ -672,9 +672,59 @@ console.log(functionName(...numss));
 // let nums = [2,4,6,8,10];
 // console.log(sumVals(...nums));
 
+//SET Demonstration:
+const mySet = new Set();
 
+const newset = new Set("Rakshit");
+const newset1 = new Set("");
+const newset2 = new Set("Rakshit");
+console.log(newset1);
 
+console.log(newset.size);
+console.log(newset2.size);
+// console.log()
 
+//Set Objects method:
+newset1.add(34);
+newset2.add(56);
+newset.add(78);
+newset2.add("x");
+console.log(newset1);
+console.log(newset2);
+console.log(newset);
+console.log(newset.delete(78));
+console.log(newset1.delete(x));
+console.log(newset.has("R"));
+console.log(newset.clear());
+
+ //Array sorting:
+const sortops = [45,67,34,12,45];
+sortops.sort();
+console.log(sortops);
+
+const compare = (a,b)=>
+{
+  if(a==b)
+  {
+    return 0;
+  }
+  else
+  {
+  return a>b?a:b;
+  }
+}
+console.log(compare(3,2));
+
+function comparefun(A,B)
+{
+  return A-B;
+}
+sortops.sort(function comparefun(A,B)
+{
+  return A-B;
+});
+console.log(sortops);
+console.log(sortops.length);
 
 
 
