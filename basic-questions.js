@@ -756,11 +756,20 @@ console.log(ranString.charAt(2));
 console.log(ranString.charAt(6));
 console.log(ranString.toLowerCase());
 console.log(ranString.toUpperCase());
-console.log(ranString.valueOf("R"));
+console.log(ranString.valueOf("Rakshit"));
+// String.substring(startIndex);
 
-
-
-
+const stringg = "RAKSHITHH";
+console.log(stringg);
+console.log(stringg.substring(-1));
+//Displaying last 6 characters of given string.
+const stringgg = 'Rakshithh';
+console.log(stringgg.length); //9 
+console.log(stringgg.substring(stringg.length-6));
+console.log(stringg.slice(0,8));
+//== -->check only the value:
+//=== -->check  both value and type : === --> check both value
+console.log(6!==6);
 
 
 
