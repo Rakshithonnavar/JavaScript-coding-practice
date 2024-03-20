@@ -659,6 +659,7 @@ let numss = [457,678];
 // let randomm = functionName(...digit);
 console.log(functionName(...numss));
 
+
 // function sumVals(...vals)
 // {
 //   let total=0;
@@ -725,6 +726,48 @@ sortops.sort(function comparefun(A,B)
 });
 console.log(sortops);
 console.log(sortops.length);
+
+//Checking for the values:
+let xx =5;
+xx=9;
+console.log(xx);
+
+// localStorage.setItem('datakey','datavalue');
+// const data = localStorage.getItem('datakey');
+// console.log(data);
+// localStorage.removeItem('datakey');
+// console.log(data.length);
+// const data1 = localStorage.setItem('Rakshit','Kurchi','fkdmemdkm');
+// console.log(data1);
+
+let firstname = 'Rakshit';
+let lastname = 'Honnavar';
+let concatenated = `${firstname} ${lastname}`;
+console.log(concatenated);
+
+let age=22;
+"Rakshit is" +age+ "years old";
+`Raksh is ${age} years old`;
+
+
+
+let ranString = "RakshitHonnavar";
+console.log(ranString.charAt(2));
+console.log(ranString.charAt(6));
+console.log(ranString.toLowerCase());
+console.log(ranString.toUpperCase());
+console.log(ranString.valueOf("R"));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
