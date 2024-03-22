@@ -770,6 +770,82 @@ console.log(stringg.slice(0,8));
 //== -->check only the value:
 //=== -->check  both value and type : === --> check both value
 console.log(6!==6);
+//Switch Statement Demonstration:
+//Hotel Menu;
+
+
+    let menu = 8;
+switch(menu){
+  default: console.log("Choose frm menu list only"); 
+           break;  
+  case 1: console.log("Idli");
+           break;
+   case 2:console.log("Dosa");
+           break;
+    case 3: console.log("Buns");
+            break;
+     case 4: console.log("Palav");
+             break;
+    case 5: console.log("uppit");
+             break;
+      // case value6:
+      //  default: console.log("Choose frm menu list only");
+      //       break;
+}
+// let window;
+// function example()
+// {
+//   console.log(this===window);
+// }
+// example();
+
+const obj ={
+  someValue:100,
+  someFunc:function()
+  {
+    return this.someValue;
+  },
+};
+const objuu={
+   rnadomkey: 200,
+   key6:677,
+   ramdom: function()
+   {
+    return this.rnadomkey;
+    return this.key6;
+   },
+};
+console.log(objuu.key6);
+
+
+let getValue = obj.someFunc;
+console.log(obj.someFunc());
+
+function Obj(value){
+  this.someValue = value;
+}
+let objj = new Obj(100);
+console.log(objj.someValue);
+// console.log(obj.someFunc());
+// obj.someValue =23;
+// console.log(obj.someFunc());
+
+class Human2{
+  constructor(hesaru,vayasuu,linga)
+  {
+    this.hesaru=hesaru;
+    this.vayasuu = vayasuu;
+    this.lings= linga;
+  }
+myself()
+{
+const hold = new Human2("Rakshit","22","Male");
+const hold2= `My name is ${this.hesaru} I am ${this.vayasuu} year old ${this.linga}`;
+console.log(hold2);
+}
+}
+
+
 
 
 
