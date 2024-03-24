@@ -659,6 +659,7 @@ let numss = [457,678];
 // let randomm = functionName(...digit);
 console.log(functionName(...numss));
 
+
 // function sumVals(...vals)
 // {
 //   let total=0;
@@ -724,6 +725,8 @@ sortops.sort(function comparefun(A,B)
   return A-B;
 });
 console.log(sortops);
+
+
 console.log(sortops.length);
 
 
