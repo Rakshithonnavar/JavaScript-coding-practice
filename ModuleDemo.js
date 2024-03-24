@@ -20,8 +20,43 @@ console.log(store);
 console.log(samecheck());
 const array2= [34,56,89,45,34];
 const array3= [34,56,89,45,34];
+let array4=0;
+if(array2==array3)
+{
+    console.log("True");
+}
+else{
+    console.log("false");
+}
+const demoarray = [56,78,56,90,78];
+//Array out of Bound exception demonstration using  try catch block
+// let test  = demoarray[5];
+// console.log(test);
+
+// const store1 = [];
+// try{
+    let test  = demoarray[5];
+    // for(let i=0;i<demoarray.length;i++)
+    // {
+    //     if(demoarray[i]<=demoarray.length)
+    //        demoarray.push(store1[i]);  
+    //     //   console.log(store1);  
+    // }
+//     console.log(store1);  
+// }
+// catch(error)
+// {
+//      lastIndex = findLastIndex(demoarray,high/2,high);
+//      console.log("Array out of bounds exception");
+// }
 
 
-// console.log(array1);
-
-
+let num = 3;
+if(num in demoarray)
+{
+    const moulya  = demoarray[num];
+    console.log(moulya);
+}
+else{
+    console.log(num+ "is not present in the array");
+}
