@@ -730,6 +730,27 @@ console.log(sortops);
 console.log(sortops.length);
 
 
+//Printing Numbers from 1 to 10:
+function  printnums(){
+let numberrr=0;
+while(numberrr<=10)
+{
+  numberrr++;
+}
+console.log(numberrr);
+}
+console.log(printnums());
+
+// function printnumbers()
+// {
+//   do
+//   {
+//     numberrr++;
+//   }
+//   while
+// }
+
+
 
   
 
