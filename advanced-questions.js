@@ -1,5 +1,5 @@
-//This file contains some advanced level coding questions in JavaScripts:
-// let name = prompt("Enter the name:");
+//This file contains some advanced-level coding questions in JavaScript:
+
 import { displayName } from "./basic-questions.js";
 
 let variable = displayName('Rakshit');
