@@ -750,7 +750,6 @@ console.log(printnums());
 //   while
 // }
 
-
-
-  
-
+const arry = [34,56,67,75,58];
+console.log(arry);
+// console.log(isPalindrome());
