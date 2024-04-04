@@ -552,15 +552,6 @@ async function someAsyncAwaitFunction()
 
 someAsyncAwaitFunction();
 
-
-
-//Largest of 3 numbers:
-// let p=10;
-// let q=20;
-// let r=30;
-
-// const res=  (p>q && p>r) ?P:(q>r)?q:r;
-// console.log("The largest number is : "+res);
 class gaadi{
   constructor(company,paisa,saal)
   {
@@ -572,21 +563,6 @@ class gaadi{
 const vahana = new gaadi("toyota","34lakh",'2019');
 const vxh =  `this car belongs to ${this.company} its price is ${this.paisa} and the lauching year is ${this.saal}`;
 console.log(vxh);
-
-//Regular Expressions
-// let regularexp = new RegExp('foo?','i');
-// let regularexp1 = new RegExp1('amg%%');
-// console.log(regularexp);
-
-// let strr = 'My name is Rakshit';
-
-// let reggexp = new exp('rakshit',"gi");
-// console.log(strr.replace(reggexp,"Rakshit"));
-
-// let strng = 'york is Worship';
-// let reggexp =  new  RegExp ('\w', "w");
-// console.log(strng.replace(reggexp,'y'));
-
 
 function demo3()
 {
@@ -658,20 +634,6 @@ function functionName(...digit)
 let numss = [457,678];
 // let randomm = functionName(...digit);
 console.log(functionName(...numss));
-
-
-// function sumVals(...vals)
-// {
-//   let total=0;
-//   for(let val of vals)
-//   {
-//     total+=val;
-//   }
-//   return total;
-// }
-
-// let nums = [2,4,6,8,10];
-// console.log(sumVals(...nums));
 
 //SET Demonstration:
 const mySet = new Set();
