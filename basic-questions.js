@@ -382,16 +382,7 @@ Bio.AGE=23;
 random = Bio.person.bind(Bio);
 random();
 
-// let test6 = Bio.person;
-// console.log(test6);
 
-//Modules Demonstration:
-// export function displayName(name)
-// {
-//   return `Hello this is ${name} here!`; 
-// }
-
-//Mutator Method Implementation.
 
 class Human7
 {
