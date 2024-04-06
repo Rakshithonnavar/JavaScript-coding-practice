@@ -1,6 +1,3 @@
-// console.log("HelloWorld");
-
-
 // //Code to chech weather given number  is prime or not:
 function  checkPrime(num) {
     if(num>1 && num%2!==0){
@@ -14,16 +11,6 @@ checkPrime(5);
 
 //Maximum Number in array:
 // let count = prompt("Enter the count");
-// let n = parseInt(count);
-// function maxElement(n)
-// {
-//    const nums = [34,26,37,48]; 
-//     nums.sort();
-//     return nums[n-1];
-// }
-// console.log(maxElement());
-
-
 //Check if the given string is plaindrome:
 function isPalindrome(str)
 {
