@@ -103,8 +103,7 @@ function findLargest(num)
 // function TitleCase(str)
 // {
 //   //  const  str = "It's a beautiful day";
-//   return str.replace(str.charAt(0).toUpperCase());
-// }
+//   return str.replace(str.charAt(0).toUpperCase())
 // TitleCase(str);
 
 function Random()
@@ -681,14 +680,7 @@ console.log(numberrr);
 }
 console.log(printnums());
 
-// function printnumbers()
-// {
-//   do
-//   {
-//     numberrr++;
-//   }
-//   while
-// }
+
 
 const arry = [34,56,67,75,58];
 console.log(arry);
