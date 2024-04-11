@@ -100,12 +100,7 @@ function findLargest(num)
   console.log(findLargest(5)); // Outputs
 //Function to capitlize 1st letter  of each word and convert all letters to uppercase
 
-// function TitleCase(str)
-// {
-//   //  const  str = "It's a beautiful day";
-//   return str.replace(str.charAt(0).toUpperCase());
-// }
-// TitleCase(str);
+
 
 function Random()
   {
