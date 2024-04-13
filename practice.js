@@ -25,9 +25,11 @@ class Vehicle{
   }
   const gaadi = new Vehicle('BMW',2020,'5 Lakhs');
   console.log(Vehicle.price_check());
+
   
+  console.log("Rakshit");
   
-  
+
 
 
   
