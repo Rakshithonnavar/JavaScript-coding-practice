@@ -686,3 +686,46 @@ console.log(printnums());
 const arry = [34,56,67,75,58];
 console.log(arry);
 // console.log(isPalindrome());
+const array3 = [34,78,34,78,12];
+const array4 = [89,56,89,71,45];
+const array5 = array3+","+array4;
+console.log(array5);
+
+console.log(Timezone);
+console.log(Date);
+Date();
+console.log(Date());
+
+class college1 
+{
+ constructor(title,year,location) 
+ {
+  this.title=title;
+  this.year=year;
+  this.location=location;
+ }
+ displayCollege()
+ {
+      return `this is ${this.title} which was established in the year ${this.year} and this is situated in ${this.location}`;
+}
+}
+const collegedisplay = new college1("Canara Engineering College","2001","Mangalore");
+
+function displaycollege()
+{
+    console.log("Canara Engineering College");
+}
+displaycollege();
+
+console.log(day);
+console.log(month);
+
+
+
+
+
+
+
+
+
+
