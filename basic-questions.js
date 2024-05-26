@@ -716,9 +716,46 @@ function displaycollege()
     console.log("Canara Engineering College");
 }
 displaycollege();
-
 console.log(day);
 console.log(month);
+const sett =  new Set();
+
+const college = {
+  year:'2001',
+  name:'Canara Engineering College',
+  Location:'Mangalore',
+  display : function()
+  {
+    console.log(this.year+' '+this.name+', '+this.Location);
+  },
+};
+
+college.display();
+
+
+
+const Myprofile = {
+  name:'Rakshit',
+  age: "22",
+
+  prof : function()
+  {
+    console.log("My name is"+" "+this.name+", am " +this.age+" years old");
+  },
+}
+Myprofile.prof();
+
+
+
+
+
+
+
+
+
+
+// const newSett =  new Set(Rakshit);
+
 
 
 
