@@ -1,4 +1,4 @@
-let btn = document.getElementById("hello-button");
+let btn = document.getElementById('Hello-button');
 
 btn.addEventListener('click',()=>{
     window.alert('Hello world!');
@@ -9,11 +9,23 @@ let btn2 = document.getElementById("My-name");
 btn2.addEventListener('click',() =>{
    window.alert("Rakshit");
 }) 
+ let btn3 =  document.getElementById("My-age");
+ btn.addEventListener('click',()=>{
+    window.alert("Hellow world");
+ })
+ let btn4 = document.getElementById("My-age");
+ btn.addEventListener('click',()=>{
+    window.alert("Hello world");
+ })
+ let btn5 =  docment.getElementById("random");
+ btn5.addEventListener('click',()=>{
+     window.alert("helloworld");
+ })
+ 
+// const btn3 =document.getElementById("My age")
 
-const btn3 =document.getElementById("My age")
-
-btn3.addEventListener('click',() =>{
-  window.alert("22");
-})
+// btn3.addEventListener('click',() =>{
+//   window.alert("22");
+// })
 
 

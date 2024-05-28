@@ -776,8 +776,54 @@ function outer(){
   return inner;
 }
 
+let global1 = 'test1';
+
+function outer()
+{
+      let locaglobal = "test2";
+
+      function inner()
+      {
+        let randomvariable  = `${global1},${locaglobal}`;
+        return randomvariable;
+      }
+    return inner;
+}
 
 
+function Myprofilee(Name,age,Degree)
+{
+  this.Name=Name;
+  this.age=age;
+  this.Degree=Degree;
+}
+
+let person1 = new Myprofilee("Rakshit","22","Information Science");
+let person2 = new Myprofilee("XYZ","33","BYH");
+
+console.log("My name is " + person1.Name +" "+"I am "+ person1.age +" "+ "years old "+"I have obtained bachelors in"+" "+ person1.Degree);
+
+class Carr{
+  constructor(name,year,price){
+    this.name=name;
+    this.year=year;
+    this.price=price;
+  }
+}
+
+let CAR1 = new Carr("Fortuner","2010","34lakhs");
+
+console.log("This is "+CAR1.name+" which was launched in the year "+CAR1.year+" its on road value is "+CAR1.price+".");
+
+//Event Handling:
+
+<button id="Hello-button">Click me!</button>
+
+var btn = document.getElementById('Hello-button');
+
+btn.addEventListener('click',() =>{
+  window.alert("Hello World!");
+});
 
 
 
