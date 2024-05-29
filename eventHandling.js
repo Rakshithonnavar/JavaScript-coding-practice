@@ -21,6 +21,10 @@ btn2.addEventListener('click',() =>{
  btn5.addEventListener('click',()=>{
      window.alert("helloworld");
  })
+let btn6 = document.getElementById("text");
+btn6.addEventListener('click',()=>{
+   window.alert("Hello world");
+})
  
 // const btn3 =document.getElementById("My age")
 
