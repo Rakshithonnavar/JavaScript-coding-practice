@@ -87,10 +87,47 @@ const colleges = new Map([
     ['SCEM',"Mangaluru"],
     ['CEC',"Mangaluru"],
 ])
+const cars = new Map([
+    ['Tata',"Nexon"],
+    ['Tata',"Harrier"],
+    ['Tata',"Safari"],
+    ['Suzuki',"Swift"],
+    ['Suzuki',"Ertiga"],
+])
+
+const promise =  new Promise((resolve,reject)=>{
+    const term1 =2;
+    const term2 = 2;
+    const expression =  term1 + term2;
+    const answer = 4;
+    const expressionIscorrect = expression === answer;
+})
+const colleges = new Map([
+
+])
 
 console.log(colleges.get('SCEM'));
+let myPromise = new Promise((resolve,reject)=>{
+    const term1 = 2;
+    const term2 = 2;
+    const expression = term1+term2;
+    const answer = 4;
+    const expressionIsCorrect = expression === answer;
+})   
+if(expressionIsCorrect){
+    resolve("This proimise was fullfilled");
+} 
 
-
+else
+{
+    reject(
+        {
+            errorType:'ArithmeticError',
+             message:"The expression didn't evaluate coorectly.",
+             originalExpression: `${term1} + ${term2} === ${answer}`,
+        }
+    );
+}
 
 
 
