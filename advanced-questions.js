@@ -102,9 +102,7 @@ const promise =  new Promise((resolve,reject)=>{
     const answer = 4;
     const expressionIscorrect = expression === answer;
 })
-const colleges = new Map([
 
-])
 
 console.log(colleges.get('SCEM'));
 let myPromise = new Promise((resolve,reject)=>{
@@ -112,7 +110,6 @@ let myPromise = new Promise((resolve,reject)=>{
     const term2 = 2;
     const expression = term1+term2;
     const answer = 4;
-    const expressionIsCorrect = expression === answer;
 })   
 if(expressionIsCorrect){
     resolve("This proimise was fullfilled");
@@ -128,6 +125,34 @@ else
         }
     );
 }
+
+//Requests
+
+let xhr = new XMLHttpRequest();
+xhr.open(method,URL,[async,user,password]);
+xhr.open(method,URL,[async,user,password]);
+xhr.send([body]);
+
+xhr.onload = function(){
+    alert(`Progress: ${xhr.status} ${xhr.response}`);
+}
+xhr.onerror = function(){
+    alert('Network error Occurred');
+};
+
+xhr.onprogress = function(event){
+    alert(`Received ${event.loaded} of ${event.total}`);
+};
+
+const mySet = new Set([2,true,2,'some string',{Name:'John'}]);
+//Sets as iterators:
+
+console.log(mySet);
+console.log(newSet.size);
+
+const myset = new Set('Rakshit','Sahana','abc','xyz');
+
+console.log(mySet);
 
 
 

@@ -817,18 +817,46 @@ console.log("This is "+CAR1.name+" which was launched in the year "+CAR1.year+" 
 
 //Event Handling:
 
-<button id="Hello-button">Click me!</button>
+// {/* <button id="Hello-button">Click me!</button>
 
-var btn = document.getElementById('Hello-button');
+// var btn = document.getElementById('Hello-button');
 
-btn.addEventListener('click',() =>{
-  window.alert("Hello World!");
+// btn.addEventListener('click',() =>{
+//   window.alert("Hello World!");
+// }); */}
+
+//Set demo 
+
+const myset = new Set([1,2,3,4,56]);
+
+console.log(mySet);
+console.log(mySet.size);
+
+
+const randomarray = [35,67,88,67,56];
+
+console.log(randomarray.sort());
+
+
+//Sorting in presence of comparision function:
+
+function CompareFn(A,B)
+{
+  return A-B;
+}
+
+let Randomarr1 = [23,56,98,22,45,23];
+randomarray.sort(function Compare(A,B){
+  return A-B;
 });
+console.log(randomarray);
 
 
-
-
-
+let Randomarr2 = [78,23,12,23,56,67,99];
+Randomarr2.sort(function Compare(A,B){
+  return A-B;
+});
+console.log(Randomarr2);
 
 
 
