@@ -858,5 +858,19 @@ Randomarr2.sort(function Compare(A,B){
 });
 console.log(Randomarr2);
 
+window.alert('Hello World!');
+localStorage.setItem('datakey','dataValue');
+const data = localStorage.getItem('dataKey');
+console.log(data);
+
+
+// localStorage.setItem('datakey','datavalue');
+// const data1 = localStorage.getItem('datakey');
+// console.log(data1);
+// localStorage.removeItem('datakey');
+
+localStorage.clear();
+console.log(localStorage.length);
+console.log(localStorage.length);
 
 
