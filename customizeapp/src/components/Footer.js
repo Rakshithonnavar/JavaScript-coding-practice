@@ -1,6 +1,3 @@
-
-
-
 function Footer() {
     return (
         <div className="copyright">
@@ -8,5 +5,4 @@ function Footer() {
         </div>
     );
 };
-
 export default Footer;
