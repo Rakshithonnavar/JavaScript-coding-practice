@@ -864,6 +864,7 @@ const data = localStorage.getItem('dataKey');
 console.log(data);
 
 
+
 // localStorage.setItem('datakey','datavalue');
 // const data1 = localStorage.getItem('datakey');
 // console.log(data1);
