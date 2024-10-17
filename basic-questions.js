@@ -858,8 +858,8 @@ Randomarr2.sort(function Compare(A,B){
 });
 console.log(Randomarr2);
 
-window.alert('Hello World!');
-localStorage.setItem('datakey','dataValue');
+// window.alert('Hello World!');
+// localStorage.setItem('datakey','dataValue');
 const data = localStorage.getItem('dataKey');
 console.log(data);
 
@@ -873,5 +873,28 @@ console.log(data);
 localStorage.clear();
 console.log(localStorage.length);
 console.log(localStorage.length);
+
+
+class User {
+  constructor(name,age)
+  {
+    this.name = name;
+    this.email = email;
+  }
+
+  get userEmail()
+  {
+    return this.age;
+  }
+}
+
+const person3 = new User("Rakshit",'22');
+console.log(person3);
+
+console.log(34 & 34);
+
+console.log(19>>>3);
+
+
 
 
