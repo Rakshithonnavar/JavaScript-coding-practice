@@ -103,7 +103,35 @@ simplehash['name']='Rakshit';
 simplehash['age']=20;
 simplehash['city']='Bengaluru';
 
-for(var key in simplehash)
+//Mutators 
+class Human
 {
-  
+  #name;
+
+  set name(name) //Mutator created
+  {
+    this.#name = name;
+  }
 }
+
+const human = new Human();
+human.name = 'Rakshit';
+
+console.log(human.name);
+
+const number  = 89;
+
+// console.log(isInteger(number));
+Number.isInteger(number);
+
+const myname = '90';
+
+console.log(Number.isNaN(myname));
+
+console.log(Number.parseFloat(myname));
+
+let secondnumber = '3.14';
+secondnumber = 30.14456;
+console.log(Number.parseInt(secondnumber));
+console.log(secondnumber.toFixed(3)
+);
