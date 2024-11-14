@@ -135,3 +135,58 @@ secondnumber = 30.14456;
 console.log(Number.parseInt(secondnumber));
 console.log(secondnumber.toFixed(3)
 );
+
+//Promises Practice 
+let mypromize  = new Promise((resolve,reject) => {
+  resolve('Promise is resolved');
+  reject('Promise is rejected');
+})
+console.log(mypromize);
+
+const promise =  new Promise((resolve,reject) =>{
+  const term1 = 2;
+  const term2 = 2;
+  const expression = term1 + term2;
+  const answer = 5;
+  const expiscorrect = expression === answer;
+
+  if(expiscorrect)
+  {
+    resolve('The promise was fulfilled');
+  }
+  else{
+    reject({
+      errorType : 'Arithmetic Error',
+      message:"The expression didn't evaluate correctly",
+      originalExpression: `${term1} + ${term} === ${answer}`,
+    });
+  }
+});
+
+promise
+  .then((message) => {
+    console.log(`Success: ${message}`);
+  })
+.catch ((err) =>{
+   
+})
+.finally((message) =>{
+  console.log('Operations finished');
+})
+console.log(promise);
+
+//Async Await
+function myPromise()
+{
+  return new Promise((resolve) => {
+     resolve('Successful promise!');
+  });
+}
+
+function mySecondPromise()
+{
+  return new Promise((resolve) =>{
+    resolve('Successful second promise!');
+  });
+}
+
