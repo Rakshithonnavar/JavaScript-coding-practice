@@ -190,3 +190,64 @@ function mySecondPromise()
   });
 }
 
+async function someAsyncAwaitFunction()
+{
+  try{
+    const promise = await myPromise();
+    const promisetwo = await mySecondPromise();
+
+    console.log(promise);
+    console.log(promisetwo);
+  }
+  catch(error)
+  {
+   console.log(`Error from async function: ${error}`);
+  }
+}
+
+someAsyncAwaitFunction();
+
+//
+Promise.all(iterableObject);
+
+const promiseA = new Promise((resolve,reject) => {
+  resolve(23);
+});
+
+const promiseB = new Promise((resolve, reject) =>{
+  if(12 * 12 === 144)
+  {
+    resolve(144);
+  }
+  else{
+    reject ({
+      errorType: 'TypeError',
+      message: `Unexpected type - expected ${typeof (12 * 12)}.`,
+    });
+  }
+});
+
+  Promise.all([promiseA, promiseB])
+  .then((values) => {
+    console.log(`Results from Promise.all() : [${values}]`);
+  })
+  .catch((err) =>{
+    console.log(`Error from Promise.all() : ${err.message}`);
+  })
+  .finally(() =>{
+    console.log('Finally block executed');
+  })
+
+  //Promises
+  myPromiseObject.catch(rejectedPromiseCallback);
+
+  const brokenPromise = new Promise((resolve, reject) => {
+    reject({
+      errorType: 'TypeError',
+      message:'Something went wrong.',
+    });
+  });
+
+  brokenPromise.catch((err) =>{
+    console.log(`Error from brokenPromise: ${err.message}`);
+  })
