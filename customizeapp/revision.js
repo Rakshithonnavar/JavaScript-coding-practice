@@ -176,39 +176,39 @@ promise
 console.log(promise);
 
 //Async Await
-function myPromise()
-{
-  return new Promise((resolve) => {
-     resolve('Successful promise!');
-  });
-}
+// function myPromise()
+// {
+//   return new Promise((resolve) => {
+//      resolve('Successful promise!');
+//   });
+// }
 
-function mySecondPromise()
-{
-  return new Promise((resolve) =>{
-    resolve('Successful second promise!');
-  });
-}
+// function mySecondPromise()
+// {
+//   return new Promise((resolve) =>{
+//     resolve('Successful second promise!');
+//   });
+// }
 
-async function someAsyncAwaitFunction()
-{
-  try{
-    const promise = await myPromise();
-    const promisetwo = await mySecondPromise();
+// async function someAsyncAwaitFunction()
+// {
+//   try{
+//     const promise = await myPromise();
+//     const promisetwo = await mySecondPromise();
 
-    console.log(promise);
-    console.log(promisetwo);
-  }
-  catch(error)
-  {
-   console.log(`Error from async function: ${error}`);
-  }
-}
+//     console.log(promise);
+//     console.log(promisetwo);
+//   }
+//   catch(error)
+//   {
+//    console.log(`Error from async function: ${error}`);
+//   }
+// }
 
-someAsyncAwaitFunction();
+// someAsyncAwaitFunction();
 
 //
-Promise.all(iterableObject);
+// Promise.all(iterableObject);
 
 const promiseA = new Promise((resolve,reject) => {
   resolve(23);
@@ -251,3 +251,36 @@ const promiseB = new Promise((resolve, reject) =>{
   brokenPromise.catch((err) =>{
     console.log(`Error from brokenPromise: ${err.message}`);
   })
+
+  //try ca6ch and finally
+  let num=5;
+  try{
+  if(num == 5)
+    console.log("Thank You!");
+  }catch(err)
+  {
+   console.log("Error:"+error);
+  }
+  finally{
+    console.log("Finally block executed");
+  }
+
+  //Requests:
+  let xhr  = new XMLHttpRequest();
+  xhr.open(method, URL,[async,user,password]);
+  xhr.send([body]);
+
+  xhr.onload = function()
+  {
+    alert(`Progress: ${xhr.status} ${xhr.response}`);
+  };
+  xhr.onerror = function()
+  {
+   alert(`Network Error Occurred`);
+  };
+  xhr.onprogress = function (event)
+  {
+    alert(`Received ${event.loaded} of ${event.total}`);
+  };
+  //Response:
+
