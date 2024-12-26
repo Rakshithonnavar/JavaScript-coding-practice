@@ -284,3 +284,11 @@ const promiseB = new Promise((resolve, reject) =>{
   };
   //Response:
 
+  //Practice continued 
+const random =  (a,b)=>{
+   let add =  a+b;
+   console.log(add);
+}
+random(a,b);
+
+
