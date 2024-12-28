@@ -32,3 +32,65 @@ function multiply(num1,num2)
     return num1*num2;
 }
 console.log(doubleResult(8,8,multiply));
+//Events in Javascript:
+{/* <button id="Hello-button">Click Me!</button> */}
+
+// let btn = document.getElementById("Hello-button");
+
+// btn.addEventListener('click', () =>{
+//     window.alert("Hello world");
+// });
+
+// let btn1  = document.getElementById("Hello-Button");
+
+// btn1.addEventListener('click',()=>{
+//     window.alert("Hello world two");
+// })
+
+// let btn2 = document.getElementById('click',()=>{
+//     window.alert("Hello world three");
+// }
+
+// )
+
+//Promises 
+function myPromise()
+{
+    return new Promise((resolve) => {
+resolve('Successful promise!');
+    });
+}
+
+function mySecondPromise()
+{
+    return new Promise((resolve) =>{
+        resolve('Second Sucessfull Promise');
+    })
+}
+
+function myThirdPromise()
+{
+    return new Promise((resolve)=>{
+      resolve('Third Sucessful promise');
+    })
+}
+
+async function waitfunction()
+{
+    try 
+    {
+        const p1 = await myPromise();
+        const p2 = await mySecondPromise();
+        const p3 = await myThirdPromise();
+
+        console.log(promise);
+        console.log(mySecondPromise);
+        console.log(myThirdPromise);
+    }
+    catch(error)
+    {
+        console.log(`Error from async function: ${error}`);
+    }
+}
+
+waitfunction();
