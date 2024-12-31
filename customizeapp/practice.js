@@ -94,3 +94,11 @@ async function waitfunction()
 }
 
 waitfunction();
+
+const wishes = () => {
+    console.log("Happy new year 2025!");
+    console.log("This year ur a going to achieve great things Rakshit");
+    console.log("Keep Hustling");
+
+}
+console.log(wishes());
