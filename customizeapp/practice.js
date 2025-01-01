@@ -102,3 +102,39 @@ const wishes = () => {
 
 }
 console.log(wishes());
+
+const taskcompleted =  0;
+if(taskcompleted)
+{
+    console.log('Task Complted');
+}
+else{
+    console.log('Task Incomplete');
+}
+
+let simplehash =  new Object();
+simplehash['key1'] = 'value1';
+simplehash['key2'] = 'value2';
+simplehash['key3'] = 'value3';
+
+for (let key in simplehash)
+{
+    if(simplehash.hasOwnProperty(key))
+    {
+        console.log('key is: '+ key + ', value is: ' + simplehash[key]);
+    }
+
+    var maphash = new Map();
+
+    maphash.set('key1','value1');
+    maphash.set('key2','value2');
+    maphash.set('key3','value3');
+
+    console.log(maphash.get('key3'));
+
+    maphash.set('key1' , 'newvalue');
+    console.log(maphash.get('key1'));
+    
+
+}
+
