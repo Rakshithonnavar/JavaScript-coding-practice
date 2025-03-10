@@ -134,7 +134,6 @@ for (let key in simplehash)
 
     maphash.set('key1' , 'newvalue');
     console.log(maphash.get('key1'));
-    
 
 }
 
